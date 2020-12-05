@@ -1,0 +1,105 @@
+.skills{
+   margin-top: 120px;
+   .titile{
+      position: relative;
+      @include circle;
+      &:before{
+         left: 50%;
+         top: 50%;
+         transform: translate(-50%, -50%);
+      }
+   }
+   .skills__pluses{
+      font-weight: bold;
+      font-size: 36px;
+      line-height: 60px;
+      text-align: center;
+   }
+   .divider{
+      margin: 25px auto;
+      animation: rush 5s linear infinite;
+   }
+   .skills__wrapper{
+      margin-top: 60px;
+      .skills__menu{
+         display: grid;
+         grid-template-columns: repeat(4, 270px);
+         grid-template-rows: repeat(2, minmax(270px auto));
+         grid-auto-rows: auto;
+         gap: 15px;
+         .skills__item{
+            border: 1px solid rgb(85, 83, 83);
+            .item__wrapper{
+               margin: 25px 30px;
+            }
+            .subtitle{
+               margin-top: 20px;
+            }
+            .item__text{
+               margin-top: 15px;
+               font-size: 12px;
+               line-height: 18px;
+            }
+         }
+      }
+   }
+   .process{
+      margin-top: 80px;
+      display: grid;
+      grid-template-columns: repeat(3, 350px);
+      grid-template-rows: repeat(2, 70px);
+      column-gap: 45px;
+      row-gap: 30px;
+      .proccess__item{
+         position: relative;
+         .titile{
+            margin-bottom: 27px;
+            position: relative;
+            &::before{
+               left: 8px;
+            }
+         }
+         .line{
+            background-color:#E8E4DE;
+            width: 75%;
+            width: 100%;
+            border-radius: 5px;
+            .line__skill{
+               height: 15px;
+               background-color:  $main__color;
+               border-radius: 5px;
+               animation: skill__bar linear 1s;
+            }
+         }
+         .procces__percent{
+            position: absolute;
+            top: 0;
+            right: 0;
+         }
+      }
+   }
+}
+
+
+
+
+
+
+
+@keyframes rush{
+   0%{
+      transform: translateX(0px);
+   }
+   25%{
+      transform: translateX(-170px);
+   }
+   50%{
+      transform: translateX(0px);
+   }
+   75%{
+      transform: translateX(170px);
+   }
+   100%{
+      transform: translateX(0px);
+   }
+}

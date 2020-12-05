@@ -1,0 +1,41 @@
+.title{
+   font-weight: bold;
+   font-size: 36px;
+   line-height: 60px;
+   &__fs16{
+      font-size: 24px;
+      color: $black;
+      padding-left: 20px;
+      position: relative;
+   }
+   &__fs48{
+      font-size: 46px;
+      margin-top: 10px;
+      color: $black;
+   }
+   &__fs14{
+      font-size: 14px;
+      line-height: 21px;
+      font-weight: bold;
+   }
+   &__fs20{
+      font-size: 20px;
+      line-height: 30px;
+   }
+   &__fs12{
+      font-size: 12px;
+      line-height: 18px;
+      font-weight: 500;
+   }
+   &__fs36{
+      font-weight: bold;
+      font-size: 36px;
+      line-height: 60px;
+   }
+   &__header{
+      text-align: center;
+      font-weight: bold;
+      font-size: 16px;
+      line-height: 24px;
+   }
+}

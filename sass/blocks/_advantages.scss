@@ -1,0 +1,103 @@
+.advantages{
+   text-align: center;
+   margin-top: 120px;
+   .titile{
+      display: inline-block;
+      font-weight: bold;
+      font-size: 16px;
+      line-height: 24px;
+      position: relative;
+      @include circle;
+      &:before{
+         left: 24px;
+      }
+   }
+   .advantages__pluses{
+      margin-top: 6px;
+      font-weight: bold;
+      font-size: 36px;
+      line-height: 60px;
+   }
+   .divider{
+      margin: 15px auto 0;
+   }
+   .resume__wrapper{
+      padding: 60px 65px 0 65px;
+      text-align: left;
+      display: grid;
+      grid-template-columns: repeat(2, 425px);
+      column-gap: 135px;
+      .resume__column{
+         .resume__column-titile{
+            position: relative;
+            padding-left: 35px;
+            &::before{
+               content: '';
+               position: absolute;
+               width: 15px;
+               height: 15px;
+               border-radius: 100%;
+               background-color: $main__color;
+               top: 50%;
+               left: -7px;
+               transform: translateY(-50%);
+            }
+         }
+         ul{
+            li{
+               position: relative;
+               &::after{
+                  content: '';
+                  width: 1px;
+                  height: 100%;
+                  position: absolute;
+                  top: -8px;
+                  left: 0;
+                  background-color: #000;
+               }
+            }
+         }
+      }
+   }
+   .resume__item{
+      position: relative;
+      &::before{
+         content: '';
+         position: absolute;
+         top: 53px;
+         height: 1px;
+         width: 34px;
+         background-color: #000;
+      }
+      .resume__item-head{
+         padding: 0 0 0 100px;
+         padding-top: 40px;
+         position: relative;
+      }
+      .resume__item-body{
+         padding-left: 43px;
+         margin-top: 12px;
+         min-height: 75px;
+      }
+      .resume__item-icom{
+         position: absolute;
+         top: 47px;
+         left: 50px;
+         @include circle;
+         &:before{
+            top: 6px;
+            left: -17px;
+         }
+      }
+      .resume__item-location{
+         font-weight: 500;
+         font-size: 12px;
+         line-height: 18px;
+      }
+      .resume__item-body{
+         font-weight: 500;
+         font-size: 12px;
+         line-height: 18px;
+      }
+   }
+}

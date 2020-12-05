@@ -1,0 +1,58 @@
+.promo{
+   background:url('../img/notebook.jpg')center center/cover no-repeat;
+   background-attachment: fixed;
+   min-height: 100vh;
+   position: relative;
+   padding-top: 300px;
+   .promo__subtitle{
+      h2{
+         position: relative;
+         z-index: 10;
+         display: inline;
+         &::before{
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: -5px;
+            transform: translateY(-50%);
+            width: 36px;
+            height: 36px;
+            background: $main__color;
+            border-radius: 100%;
+            z-index: -1;
+         }
+      }
+   }
+   .promo__buttons{
+      display: flex;
+      align-items: center;
+      margin-top: 25px;
+      width: 300px;
+      justify-content: space-between;
+      .promo__link{
+         font-size: 14px;
+         line-height: 21px;
+         font-weight: bold;
+         color: $black;
+         margin-right: 25px;
+      }
+      .btn-small{
+         background: #FFA501;
+         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+         text-align: center;
+         display: inline-block;
+         transition: all 0.3s;
+         color: $black;
+         padding: 12px 25px;
+         &:hover{
+            color: #fff;
+         }
+      }
+   }
+}
+
+
+
+
+
+

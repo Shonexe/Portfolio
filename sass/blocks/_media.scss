@@ -1,0 +1,130 @@
+@media (max-width: 1600px){
+   .promo{
+      padding-top: 200px;
+   }
+
+
+   .sidepanel{
+      top: 170px;
+   }
+}
+
+
+
+@media (max-width: 1400px){
+   .promo{
+      padding-top: 200px;
+      text-align: center;
+      .promo__buttons{
+         margin: 20px auto;
+      }
+   }
+   .sidepanel{
+      top: 170px;
+   }
+   .main{
+      grid-template-columns: 600px;
+      .main__wrapper{
+         grid-template-columns: minmax(250px,300px) minmax(250px,300px);
+         justify-content: center;
+         .main__slider{
+            grid-column-start: 1;
+            grid-column-end: 3;
+            grid-row-start: 1;
+            grid-row-end: 2;
+            align-self: start;
+         }  
+         .main__hero{
+            grid-column-start: 1;
+            grid-column-end: 3;
+            grid-row-start: 3;
+            grid-row-end: 5;
+            align-self: start;
+            margin-top: 240px;
+         }    
+      }
+   }
+}
+
+@media (max-width: 1024px){
+   .main{
+      .main__wrapper{  
+         grid-template-columns: minmax(150px,200px) minmax(150px,200px);
+         .main__hero{
+            grid-column-start: 1;
+            grid-column-end: 3;
+            grid-row-start: 2;
+            grid-row-end: 4;
+            align-self: start;
+            margin-top: 30px;
+         }    
+      }
+   }
+   // .sidepanel{
+      
+   // }
+}
+
+@media (max-width: 768px){
+   .main{
+      .main__wrapper{  
+         grid-template-columns: minmax(150px,200px) minmax(150px,200px);
+         .main__hero{
+            grid-column-start: 1;
+            grid-column-end: 3;
+            grid-row-start: 2;
+            grid-row-end: 3;
+            align-self: start;
+            margin-top: 0px;
+         }    
+      }
+   }
+}
+
+@media (max-width: 670px){
+   .promo{
+      .promo__buttons{
+         margin: 40px auto;
+      }
+   }
+   .sidepanel{
+      left: 0;
+      .sidepanel__text{
+         span{
+            font-size: 17px;
+            font-weight: normal;
+         }
+      }
+   }
+}
+
+
+@media (max-width: 540px){
+   .promo{
+      .promo__buttons{
+         margin: 40px auto;
+      }
+   }
+   .sidepanel{
+      display: none;
+   }
+}
+
+
+
+@media (max-width: 425px){
+   .main{
+      .main__wrapper{  
+         grid-template-columns: minmax(100px,150px) minmax(100px,150px);
+         .main__hero{
+            grid-column-start: 1;
+            grid-column-end: 3;
+            grid-row-start: 2;
+            grid-row-end: 4;
+            align-self: start;
+            margin-top: 15px;
+         }    
+      }
+   }
+}
+
